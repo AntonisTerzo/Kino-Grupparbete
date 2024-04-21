@@ -4,6 +4,7 @@ import aboutRouter from "../routes/about.js";
 import bookingRouter from "../routes/booking.js";
 import apiRouter from "../routes/api.js";
 import loginRouter from "../routes/login.js";
+import registerRouter from "../routes/register.js";
 
 const app = express();
 
@@ -18,5 +19,6 @@ app.use("/movies", movieRouter);
 app.use("/about", aboutRouter);
 app.use("/booking", bookingRouter);
 app.use('/login', loginRouter);
+app.use('/register', registerRouter);
 
 export default app;

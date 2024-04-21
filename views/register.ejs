@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <%- include('./partials/head') %>
+
+  <body class="bg-gray-100 flex justify-center items-center h-screen">
+    <div class="bg-white p-8 rounded-lg shadow-md w-96">
+      <h2 class="text-2xl mb-4 text-center">Sign Up</h2>
+      <form id="signupForm">
+        <div class="mb-4">
+          <label for="email" class="block text-sm font-medium text-gray-700"
+            >Email</label
+          >
+          <input
+            type="email"
+            id="email"
+            name="email"
+            class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md"
+          />
+        </div>
+        <div class="mb-4">
+          <label for="password" class="block text-sm font-medium text-gray-700"
+            >Password</label
+          >
+          <input
+            type="password"
+            id="password"
+            name="password"
+            class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md"
+          />
+        </div>
+        <div class="mb-6">
+          <label
+            for="confirmPassword"
+            class="block text-sm font-medium text-gray-700"
+            >Confirm Password</label
+          >
+          <input
+            type="password"
+            id="confirmPassword"
+            name="confirmPassword"
+            class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md"
+          />
+        </div>
+        <div class="flex items-center justify-between">
+          <button
+            type="submit"
+            class="bg-indigo-500 text-white px-4 py-2 rounded-md hover:bg-indigo-600 focus:outline-none focus:bg-indigo-600"
+          >
+            Sign Up
+          </button>
+        </div>
+        <p id="signupError" class="text-red-500 mt-2 text-sm hidden"></p>
+        <p id="passwordStrength" class="text-red-500 mt-2 text-sm hidden"></p>
+      </form>
+      <p class="mt-4 text-sm text-center text-gray-600">
+        Already have an account?
+        <a href="login" class="font-medium text-indigo-600 hover:text-indigo-500"
+          >Sign in</a
+        >
+      </p>
+    </div>
+  </body>
+  <script src="register.js" defer></script>
+</html>
